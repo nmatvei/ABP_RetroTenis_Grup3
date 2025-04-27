@@ -32,11 +32,9 @@ public class Finestra extends JPanel{
 
 
         while (true) {
-
             panel.moviment();
             panel.repaint();
             Thread.sleep(10);
-
         }
 
     }

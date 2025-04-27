@@ -13,7 +13,7 @@ public class Bola extends ElementsJoc{
     /*Declaració de variables i atributs*/
     private final static int DIMENSIO = 20;
     private int xa = 3;
-    private int ya= 3;
+    private int ya = 3;
     private int xaInicial;
     private int yaInicial;
 
@@ -57,14 +57,18 @@ public class Bola extends ElementsJoc{
             xa = -Math.abs(xa); // Rebota cap a l'esquerra
         }
 
-        posX += xa;
-        posY += ya;
-    }
-    public void nivell(int nivellActual){
+
+
         int novaVelocitatX = xaInicial + (xaInicial * nivellActual)/10;
         int novaVelocitatY = yaInicial + (yaInicial * nivellActual)/10;
 
         xa = (xa > 0) ? novaVelocitatX : -novaVelocitatX;
         ya = (ya > 0) ? novaVelocitatY : -novaVelocitatY;
+        posX += xa;
+        posY += ya;
+    }
+
+    public void nivell(){
+
     }
 }
