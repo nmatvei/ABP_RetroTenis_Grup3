@@ -35,7 +35,7 @@ public class Joc extends JPanel{
 
     public void moviment() {
 
-        bola.moviment(getWidth(), getHeight(), pala1, pala2, this, nivell, obstacles);
+        bola.moviment(getWidth(), getHeight(), pala1, pala2, this, nivell /*,obstacles*/);
         pala1.moviment(getWidth(), getHeight());
         pala2.moviment(getWidth(), getHeight());
 
