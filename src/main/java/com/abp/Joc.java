@@ -50,7 +50,7 @@ public class Joc extends JPanel{
 
         g.setColor(Color.BLACK);
         g.setFont(new Font("Arial", Font.BOLD, 20));
-        g.drawString("Puntuació: " + puntuacio + " ms", 20, 30);
+        g.drawString("Puntuació: " + puntuacio + " punt", 20, 30);
         g.setColor(Color.BLACK);
         g.setFont(new Font("Arial", Font.BOLD, 20));
         g.drawString("Nivell: " + nivell, 20, 60);

@@ -34,12 +34,12 @@ public class Bola extends ElementsJoc{
         g2d.fillOval(posX, posY, amplada, altura);
     }
 
-    public void moviment(int width, int height, Pala pala1, Pala pala2, Joc joc) {
-
+    public void moviment(int width, int height, Pala pala1, Pala pala2, Joc joc, int nivellActual, List<Obstacle> obstacles) {
         // Fi de joc si surt per la dreta o l'esquerra
         if (posX + xa < 0 || posX + xa > width - amplada) {
             joc.gameOver();
         }
+
         // Col·lisió amb parets
         if (posY + ya < 0 || posY + ya > height - altura) ya = -ya;
 
