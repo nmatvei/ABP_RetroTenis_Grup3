@@ -1,18 +1,24 @@
 package com.abp;
 
+/**
+ * Classe Main on es crida a la finestra per a començar a executar
+ * l'aplicació
+ *
+ * @author  Pau, Nikita, Bea, Adria, Leyre
+ */
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args){
 
-        Finestra ventana = new Finestra();
+        // Instànciem un objecte de la classe Finestra
+        Finestra programa = new Finestra();
 
         try {
-
-            ventana.inici();
-
-        } catch (InterruptedException e) {
-
+            // Inetentem executar el joc
+            programa.executarPrograma();
+        }
+        catch (Exception e) {
+            // Si no ho podem, llençem una RuntimeException
             throw new RuntimeException(e);
-
         }
     }
 }
